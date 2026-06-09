@@ -1,7 +1,7 @@
 # Actuation Modelling and Experimentation of NaAc/AAm Hydrogel Beams as Soft Robotics Actuators
 
 **Duration:** 10/2024 – 09/2025  
-**Tags:** `Experiment / Hardware` · `Simulation` · `Robotic Actuation` · `Python` 
+**Tags:** `Experiment` · `Simulation` · `Soft Robotics` · `Python` 
 
 ---
 
@@ -9,7 +9,7 @@
 
 **Background:** Hydrogels are multi-stimuli-responsive actuators in the field of soft robotics. However, application-specific modelling and corresponding experimental validation for this material are currently limited.
 
-In this project, I developed a multi-physics simulation model, coupled with experimental validation, for the **electrically induced actuation of NaAc/AAm hydrogel beams** immersed in a NaCl solution.
+In this project, I developed a multi-physics simulation model, coupled with experimental validation, for the electrically induced actuation of NaAc/AAm hydrogel beams immersed in a NaCl solution.
 
 
 
@@ -175,7 +175,16 @@ I conducted bending actuation tests on the fabricated hydrogel beams in a NaCl b
 
 ## Simulation (Python + MATLAB)
 
-I built a multi-physics simulation that predicts the actuation of electro-active hydrogel beams in a salt bath under an electric field. The prediction is validated through experiments and self-consistency checks.
+I built a multi-physics simulation that predicts the actuation of electro-active hydrogel beams in a salt bath under an electric field, which involves formulating and solving a coupled nonlinear, nonconvex constrained optimization system, incorporating physical feasibility constraints and approximated physical conditions.
+The prediction is benchmarked against experimental results, literature, and self-consistency checks.
+</br>
+</br>
+The governing physics includes:
+- Diffusion-convection equation
+- Poisson equation for electric potential
+- Continuity equation
+- Momentum equation
+
 
 ### Predicted Actuation
 
